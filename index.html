@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Between — Мир книг без границ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">between<span>.</span></a>
+
+    <nav class="nav">
+      <a href="#home" class="active">Главная</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#authors">Авторы</a>
+      <a href="#community">Сообщество</a>
+      <a href="#popular">Рейтинги</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="themeButton" aria-label="Сменить тему">☾</button>
+      <button class="language-button" id="languageButton">RU</button>
+      <button class="login-button" id="loginButton">Войти</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <p class="eyebrow">МЕЖДУНАРОДНАЯ КНИЖНАЯ ПЛАТФОРМА</p>
+        <h1>Мир книг.<br><span>Без границ.</span></h1>
+        <p class="hero-description">
+          Открывай произведения со всего мира.<br>
+          Создавай собственную библиотеку.<br>
+          Находи людей, которые любят книги так же, как ты.
+        </p>
+
+        <form class="search-box" id="searchForm">
+          <input type="search" id="searchInput" placeholder="Название книги или автор..." aria-label="Поиск книг">
+          <button type="submit">Искать →</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="books-layout">
+      <article class="featured-card">
+        <div class="section-heading">
+          <h2>✦ Книга дня</h2>
+        </div>
+        <div class="featured-content">
+          <div class="featured-cover cover-pride">
+            <span>PRIDE AND<br>PREJUDICE</span>
+            <small>JANE AUSTEN</small>
+          </div>
+          <div class="featured-info">
+            <h3>Гордость и предубеждение</h3>
+            <p class="author">Джейн Остин</p>
+            <p class="description">
+              История о любви, характере, предубеждениях
+              и непростых человеческих отношениях.
+            </p>
+            <div class="book-meta">
+              <span>★ 4.8</span>
+              <span>♧ 432 стр.</span>
+            </div>
+            <button class="outline-button" data-book="Гордость и предубеждение">
+              Читать →
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <section class="popular-card" id="popular">
+        <div class="section-heading">
+          <h2>Популярные книги</h2>
+          <a href="#catalog">Смотреть все →</a>
+        </div>
+        <div class="book-list" id="popularBooks"></div>
+      </section>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ТВОЯ СЛЕДУЮЩАЯ ИСТОРИЯ</p>
+          <h2>Исследуй библиотеку</h2>
+        </div>
+        <span class="catalog-count" id="bookCount">Книги</span>
+      </div>
+      <div class="catalog-grid" id="catalogBooks"></div>
+      <p class="empty-message" id="emptyMessage" hidden="">
+        Ничего не найдено. Попробуй изменить запрос.
+      </p>
+    </section>
+
+    <section class="features" id="community">
+      <article class="feature">
+        <span class="feature-icon">▤</span>
+        <div>
+          <h3>Личная библиотека</h3>
+          <p>Собирай любимые книги</p>
+        </div>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">♧</span>
+        <div>
+          <h3>Книжные клубы</h3>
+          <p>Обсуждай и находи друзей</p>
+        </div>
+      </article>
+      <article class="feature" id="authors">
+        <span class="feature-icon">✒</span>
+        <div>
+          <h3>Публикация книг</h3>
+          <p>Делись своими историями</p>
+        </div>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">◎</span>
+        <div>
+          <h3>Мировое сообщество</h3>
+          <p>Читай вместе с миром</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo">between<span>.</span></a>
+    <p>© 2026 Between. Мир книг без границ.</p>
+    <a href="#home" class="back-top">↑ Наверх</a>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+
+
+</body></html>
